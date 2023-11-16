@@ -1,8 +1,6 @@
-test
 <!DOCTYPE html>
-
 <html>
-  <head>
+<head>
     <title>My Ageasssss</title>
     <link rel="stylesheet" href="/resetstylesheet.css" />
     <link rel="stylesheet" href="/stylesheet.css" />
@@ -14,16 +12,64 @@ test
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
-  <body>
+<body>
     <header>
-      <a
-        href="https://www.ageas.co.uk/?_ga=2.121409935.647310521.1698137173-364032112.1696943888"
-      >
-        <img id="logoWhiteFont" src="/src/logoWhiteFont.svg" alt="Ageas Logo" />
-      </a>
+        <a href="https://www.ageas.co.uk/?_ga=2.121409935.647310521.1698137173-364032112.1696943888">
+            <img id="logoWhiteFont" src="/src/logoWhiteFont.svg" alt="Ageas Logo">
+        </a>
     </header>
-    <div class="flexContainerMain"></div>
-
-    <footer></footer>
-  </body>
-</html>
+    <div class="flexContainerMain">
+        <main>
+            <form>
+                <p class="intro">Our easy to use online account lets you manage your policy, view your policy documents
+                    and keep everything up to date with no admin fees.</p>
+                <p class="pSmall"><strong>Please note:</strong> If you bought an Ageas policy from another company,
+                    such as a broker, please contact them.</p>
+                <h2>Policy Details</h2>
+                <p>This Information will be used to connect your policy to your new online account.</p>
+                <div class="flexContainerInput">
+                    <label for="policyNumber">Policy Number</label><img class="helpIcon" src="/src/questionSymbol.png"
+                        alt="Help Icon">
+                </div>
+                <input class="textBox" type="text" id="policyNumber">
+                <p class="warning">&#x26A0 Please enter the policy number</p>
+                <label for="day">Date of Birth</label>
+                <div class="flexContainerDateBox">
+                    <select class="dateBox" id="day">
+                        <option value="DD">DD</option>
+                    </select>
+                    <select class="dateBox" id="month">
+                        <option value="MM">MM</option>
+                        <option value="01">01</option>
+                    </select>
+                    <select class="dateBox" id="year">
+                        <option value="YYYY">YYYY</option>
+                    </select>
+                </div>
+                <div class="flexContainerInput">
+                    <label for="postcode">Postcode</label><img class="helpIcon" src="/src/questionSymbol.png"
+                        alt="Help Icon">
+                </div>
+                <input class="textBoxHalfWidth" type="text" id="postcode">
+                <p class="warning">&#x26A0 Please enter the post code</p>
+                <h2>Account Details</h2>
+                <p>Providing this information will let you access your online account.</p>
+                <div class="flexContainerInput">
+                    <label for="username">Username</label><img class="helpIcon" src="/src/questionSymbol.png"
+                        alt="Help Icon">
+                </div>
+                <p class="labelDetail">(Please use your email address)</p>
+                <input class="textBox" type="email" id="username" placeholder="example@hotmail.co.uk">
+                <div class="flexContainerInput">
+                    <label for="password">Password</label><img class="helpIcon" src="/src/questionSymbol.png"
+                        alt="Help Icon">
+                </div>
+                <p class="labelDetail">(Between 8 and 16 characters, including at least 1 letter and 1
+                    number and we accept the following special characters!$%^&*#@)</p>
+                <input class="textBox" type="password" id="password">
+                <button class="purpleButton" type="submit">Create my online account</button>
+                <h3>Already registered? Log in here</h3>
+            </form>
+        </main>
+    </div>
+</body>
