@@ -1,1 +1,10 @@
-test
+header {
+  background-color: black;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  margin: 5px;
+}
