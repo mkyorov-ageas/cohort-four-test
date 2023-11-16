@@ -1,1 +1,236 @@
-test
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+p {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+header {
+  background-color: black;
+}
+
+#logoWhiteFont {
+  width: 143px;
+  margin: 27px 20px 17px 30px;
+}
+
+.flexContainerMain {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
+main {
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 760px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 0 rgb(160 160 160);
+}
+
+h1 {
+  background-color: rgb(143, 64, 156);
+  color: white;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 32px;
+  padding: 20px 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: sans-serif;
+}
+
+form {
+  max-width: 80%;
+  margin: auto;
+}
+
+.flexContainerInput {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.intro {
+  text-align: center;
+}
+
+.pSmall {
+  text-align: center;
+  font-size: 14px;
+}
+
+h2 {
+  color: rgb(143, 64, 156);
+  font-size: 22px;
+  margin: 20px 0px;
+  font-family: sans-serif;
+}
+
+label {
+  font-weight: bold;
+  line-height: 28px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.labelDetail {
+  margin: 0;
+  font-size: 14px;
+}
+
+.helpIcon {
+  height: 38px;
+}
+
+.textBox {
+  border-color: rgb(160 160 160);
+  border-width: 1px;
+  border-style: solid;
+  height: 32px;
+  font-size: 16px;
+  width: 80%;
+  padding: 4px;
+  margin-bottom: 3%;
+}
+
+.textBoxHalfWidth {
+  border-color: rgb(160 160 160);
+  border-width: 1px;
+  border-style: solid;
+  height: 32px;
+  font-size: 16px;
+  padding: 4px;
+  margin-bottom: 3%;
+  width: 50%;
+}
+
+.warning {
+  color: rgb(238, 86, 35);
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.flexContainerDateBox {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.dateBox {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 44px;
+  font-size: 16px;
+  border-color: rgb(160 160 160);
+  border-width: 1px;
+  padding: 4px;
+  border-radius: 5px;
+  background-image: url("/src/dropdownIcon.png");
+  background-repeat: no-repeat;
+  background-position: 96% center;
+  flex-grow: 0.24;
+  margin: 1% 1% 1% 0;
+}
+
+#year {
+  margin: 1% 0;
+}
+
+span {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+#password {
+  background-image: url("/src/eyeIcon.png");
+  background-repeat: no-repeat;
+  background-position: 96% center;
+}
+
+.purpleButton {
+  background-color: rgb(143, 64, 156);
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  border-style: hidden;
+  padding: 14px 24px;
+  min-width: 30%;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+button:hover {
+  transition-duration: 0.6s;
+  background-color: rgb(83, 14, 106);
+}
+
+footer {
+  background-color: rgb(100 100 100);
+  margin-top: auto;
+  padding-top: 40px;
+}
+
+.footerContent {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  max-width: 760px;
+  margin: auto;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+#paymentCards {
+  max-height: 40px;
+  margin-top: 20px;
+}
+
+.version {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  /*FOR TABLETS*/
+
+  main {
+    max-width: 96%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  .textBox {
+    width: 98%;
+  }
+  .textBoxHalfWidth {
+    width: 98%;
+  }
+  .dateBox {
+    margin: 1% 0;
+  }
+  .flexContainerDateBox {
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .purpleButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  /*FOR PHONES*/
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
